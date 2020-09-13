@@ -1,0 +1,30 @@
+if test $# -ne 1
+then
+	echo usage: $0 keyfile >&2
+	exit 1
+else
+	echo Letters repeated in the from list: 
+	for i in a b c d e f g h i j k l m n o p q r s t u v w x y z
+	do 
+		if test `cat "$1" | grep "$i "  | wc -l` -gt 1
+		then
+			echo $i
+		fi 
+	done
+	echo Letters missing from the from list:
+        for i in a b c d e f g h i j k l m n o p q r s t u v w x y z
+        do
+                if test `cat "$1" | grep "$i "  | wc -l` -eq 0
+                then
+                        echo $i
+                fi
+        done
+	echo Letters repeated in the to list:
+        for i in a b c d e f g h i j k l m n o p q r s t u v w x y z
+        do               
+		if test `cat "$1" | grep " $i"  | wc -l` -gt 1
+                then
+                        echo $i
+                fi
+        done
+fi

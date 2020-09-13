@@ -1,0 +1,9 @@
+if test $# -ne 1
+then
+        echo usage: $0 keyfile >&2
+        exit 1
+else
+	awk '{print $1}' "$1" | awk '{print}' ORS='' | sed 's/$/ /'
+	awk '{print $2}' "$1" | awk '{print}' ORS=''
+	echo ""
+fi

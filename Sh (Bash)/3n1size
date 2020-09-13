@@ -1,0 +1,24 @@
+if test $# -eq 0
+then
+	echo usage: $0 n ... >&2
+	exit 1
+fi
+for i in "$@"
+do
+	length=0
+	arg=$i
+	while test $arg -ne 1
+	do
+        	rem=`expr $arg % 2`
+        	if test $rem -eq 0
+        	then
+                	arg=`expr $arg / 2`
+                	length=`expr $length + 1`
+        	else
+                	arg=`expr $arg \* 3`
+                	arg=`expr $arg + 1`
+                	length=`expr $length + 1`
+       		fi
+	done
+	echo $length	
+done

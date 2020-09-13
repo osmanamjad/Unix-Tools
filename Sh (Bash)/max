@@ -1,0 +1,1 @@
+cat "$@" | tr -s ' ' '\012' | sort -n | tail -1 | grep "[0-9]"
