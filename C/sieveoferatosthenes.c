@@ -1,3 +1,4 @@
+//get prime numbers from 1-100 using threads
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
