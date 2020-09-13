@@ -1,3 +1,4 @@
+//receives a byte using signals
 #include <stdio.h>
 #include <unistd.h>
 #include <signal.h>
