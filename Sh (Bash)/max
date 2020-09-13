@@ -1,1 +1,2 @@
+#reads from all of the files listed on the command-line, or if there are no command-line arguments, it reads from the standard input and returns the maximum number
 cat "$@" | tr -s ' ' '\012' | sort -n | tail -1 | grep "[0-9]"

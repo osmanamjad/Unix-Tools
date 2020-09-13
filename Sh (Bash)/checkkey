@@ -1,3 +1,4 @@
+#given a file of two columns of letters, output the letters that are repeated and missing in each column
 if test $# -ne 1
 then
 	echo usage: $0 keyfile >&2
