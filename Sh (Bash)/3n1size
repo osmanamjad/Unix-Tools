@@ -1,3 +1,4 @@
+#outputs the number of operations (either dividing by 2 for evens, or multiply by 3 and adding 1 for odds) it takes for a number to get to 1
 if test $# -eq 0
 then
 	echo usage: $0 n ... >&2
