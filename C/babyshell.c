@@ -1,3 +1,4 @@
+//a trivial shell
 #include <stdio.h>
 #include "parse.h"
 #include <string.h>

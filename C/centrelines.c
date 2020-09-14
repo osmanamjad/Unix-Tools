@@ -1,3 +1,4 @@
+//takes input from files or stdin and centres it to a certain width
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

@@ -1,3 +1,4 @@
+//like "find −name": it recursively traverses one or more directories, looking for a file with the exact specified name (not a substring). It outputs an appropriate path name for each match.
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
